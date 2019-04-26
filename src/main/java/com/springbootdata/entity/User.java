@@ -12,6 +12,7 @@ public class User {
 	private String id;
 	private String nome;
 	private String email;
+	private int idade;
 	private Set<Role> roles;
 	
 	
@@ -27,11 +28,12 @@ public class User {
 		this.email = email;
 		this.roles = roles;
 	}
-
-	public User(String nome, String email) {
+	
+	public User(String nome, String email, int idade) {
 		super();
 		this.nome = nome;
 		this.email = email;
+		this.idade = idade;
 	}
 
 
@@ -67,5 +69,14 @@ public class User {
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
 	}
+
+	public int getIdade() {
+		return idade;
+	}
+	
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
 	
 }
